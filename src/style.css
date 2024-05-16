@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/background-pattern-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'Work Sans' , 'sans-serif';
+    
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    height: 50%;
+    background-color: white;
+    padding: 24px;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.faq-head{
+    display: flex;
+    gap: 20px;
+}
+
+.faq-head h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+img, svg{
+    max-width: 100%;
+    display: block;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 16px 0;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+button:hover{
+    color: purple;
+    transition: 0.3s;
+}
+
+.accordion-btn .icon .minus-icon{
+    display: none;
+}
+
+.description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-heigth 200ms ease;
+
+}
+
+.description p{
+    color: hsl(292, 16%, 49%);
+    padding: 24px 0;
+}
+
+@media(max-width: 540px){
+    body{
+        background-image: url(./images/background-pattern-mobile.svg);
+    }
+}
